@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"/>
+    <title>MY Calculator</title>
+</head>
+<body>
+    <!-- CALCULATOR CONTANIER & DECORATIVE CORNERS -->
+     <div class="calc-wrap">
+        <div class="calc" id="calc">
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+
+            <!-- CALCULATOR LABEL -->
+             <div class="calc-label"><span>My</span> CALCULATOR</div>
+
+            <!-- DISPALY SECTION & RESULT DISPALY -->
+             <div class="display">
+                <div class="expression" id="expression"></div>
+                <div class="result" id="result">0<span class="cursor"></span></div>
+             </div>
+
+             <!-- BUTTON-GRID -->
+              <div class="btn-grid">
+                <!-- ROW 1 ARITHMETIC OPERATION BUTTONS-->
+                 <button class="clear" data-action="clear" id="btn-ac" >AC</button>
+                 <button class="clear" data-action="sign" id="btn-sg">+/−</button>
+                 <button class="clear" data-action="percent" id="btn-pc">%</button>
+                 <button class="op" data-action="operator" data-op="/" id="btn-div">÷</button>
+
+                 <!-- ROW 2 DIGIT BUTTONS -->
+                  <button data-action="digit" data-val="7" id="btn-7">7</button>
+                  <button data-action="digit" data-val="8" id="btn-8">8</button>
+                  <button data-action="digit" data-val="9" id="btn-9">9</button>
+                  <button class="op" data-action="operator" data-op="*" id="btn-mul">×</button>
+
+                  <!-- ROW 3 DIGIT BUTTON -->
+                   <button data-action="digit" data-val="4" id="btn-4">4</button>
+                   <button data-action="digit" data-val="5" id="btn-5">5</button>
+                   <button data-action="digit" data-val="6" id="btn-6">6</button>
+                   <button class="op" data-action="operator" data-op="-" id="btn-sub">-</button>
+
+                    <!-- ROW 4 DIGIT BUTTON -->
+                    <button data-action="digit" data-val="1" id="btn-1">1</button>
+                    <button data-action="digit" data-val="2" id="btn-2">2</button>
+                    <button data-action="digit" data-val="3" id="btn-3">3</button>
+                    <button class="op" data-action="operator" data-op="+" id="btn-add">+</button>
+
+                    <!-- ROW 5  -->
+                     <button class="zero" data-action="digit" data-val="0" id="btn-0">0</button>
+                     <button              data-action="decimal"            id="btn-dot">.</button>
+                     <button class="eq"   data-action="equals"              id="btn-eq">=</button>
+              </div>
+
+              <!-- KEYBOARD HINT -->
+               <div class="kb-hint">
+                keyboard: <span>0-9</span><span>+ − * /</span><span>Enter</span><span>Esc</span><span>⌫</span>
+               </div>
+        </div>
+     </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
