@@ -1,7 +1,7 @@
 # CodeAlpha Internship Task 1
 
 ## Project Title
- Calculator Application
+A Calculator Application
 
 ## Description
 A responsive calculator built using HTML, CSS, and JavaScript.
